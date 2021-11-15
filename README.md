@@ -16,8 +16,12 @@ To proceed training the next sequential block,
 
 ```python cont_train.py --device 3 --nreps 6 --load_SEmodel prev_model_dir/model_last.pt --load_SErundata prev_model_dir/rundata_last.pt --is_save```
 
+To fine-tune BLOOM-Net,
+
+```python finetuning.py --device 1 --ori_l1_dir ori_l1_dir/model_last.pt --feat_seq_l2_dir feat_seq_l2_dir/model_last.pt --feat_seq_l3_dir feat_seq_l3_dir/model_last.pt --feat_seq_l4_dir feat_seq_l4_dir/model_last.pt --feat_seq_l5_dir feat_seq_l5_dir/model_last.pt --feat_seq_l6_dir feat_seq_l6_dir/model_last.pt --is_save``` 
+
 ### Notes
-- Number of epochs required for convergence of additional blocks may vary during sequential training. 
+- Number of epochs required for convergence of additional blocks may vary during sequential training and also fine-tuning. 
 
 ## References
 1. S. Kim and M. Kim, “Bloom-net: Blockwise optimization for masking networks toward scalable andefficient speech enhancement (under review),” in Proc. of the IEEE International Conference on Acoustics,Speech, and Signal Processing (ICASSP), 2021.
