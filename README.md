@@ -7,8 +7,10 @@ Source code for "BLOOM-Net: Blockwise Optimization for Masking Networks Toward S
 ```pretrain_generalist``` is the E2E variant. 
 
 ## Usage
-The script can be run through
-```python cont_train.py --device 3 --nreps 6 --load_SEmodel prev_model_dir/model_last.pt --load_SErundata prev_model_dir/rundata_last.pt --is_save```
+For training E2E models, the e2e_train.py script can be run through
+```python e2e_train.py --device 2 --is_ctn --nreps 2 --nblks 1 --tot_epoch 300 --duration 1 --no_skip_chan -b 64 --is_save```
+
+Continuous train, ```python cont_train.py --device 3 --nreps 6 --load_SEmodel prev_model_dir/model_last.pt --load_SErundata prev_model_dir/rundata_last.pt --is_save```
 
 ### Notes
 - Number of epochs required for convergence of additional blocks may vary. 
