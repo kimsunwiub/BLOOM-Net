@@ -7,6 +7,8 @@ Source code for "BLOOM-Net: Blockwise Optimization for Masking Networks Toward S
 
 ```cont_train.py``` takes in previous model, inserts and trains an additional block while freezing all previous blocks and encoder module.
 
+```finetuning.py``` fine-tunes the BLOOM-Net end-to-end as opposed to the previous sequential training procedure.
+
 ## Usage
 For training E2E models, the e2e_train.py script can be run through
 
