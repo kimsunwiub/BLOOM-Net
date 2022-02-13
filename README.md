@@ -26,4 +26,4 @@ To fine-tune BLOOM-Net,
 - Number of epochs required for convergence of additional blocks may vary during sequential training and also fine-tuning. 
 
 ## References
-1. S. Kim and M. Kim, “Bloom-net: Blockwise optimization for masking networks toward scalable andefficient speech enhancement (under review),” in Proc. of the IEEE International Conference on Acoustics,Speech, and Signal Processing (ICASSP), 2021.
+1. S. Kim and M. Kim, “Bloom-net: Blockwise optimization for masking networks toward scalable andefficient speech enhancement,” in Proc. of the IEEE International Conference on Acoustics,Speech, and Signal Processing (ICASSP), 2022.
